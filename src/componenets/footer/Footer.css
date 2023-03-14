@@ -1,0 +1,10 @@
+#footerSection {
+  text-align: center;
+}
+#footerSection a {
+  color: white;
+  margin-right: 20px;
+}
+#socialIcon img {
+  margin-right: 10px;
+}

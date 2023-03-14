@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./assets/fonts/Century\ Gothic.ttf") format("truetype");
+  font-weight: Century Gothic;
+}
+@font-face {
+  font-family: "Azo Sans";
+  src: url("./assets/fonts/AzoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+*,
+*::after,
+*::before,.row,.col-12{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Century Gothic;
+  font-style: normal;
+  transition: 0.5s;
+}
+
+body {
+  background: url(./assets/images/bg.png) no-repeat;
+  background-size: 100%;
+  background-color: #0f1320;
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    background: url(./assets/images/sm-bg.png) no-repeat;
+    background-size: 100%;
+    background-color: #0f1320;
+    color: white;
+  }
+}

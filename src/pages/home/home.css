@@ -1,0 +1,163 @@
+#toknerTxt {
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(0deg, #2b3087 0%, #00b4ec 81.99%), #ffd100;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#topSection h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 40px;
+}
+#description {
+  font-family: "Century Gothic";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #dde2ff;
+  opacity: 0.6;
+}
+.btn-success {
+  font-size: 1rem;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  #topSection {
+    height: 100vh;
+  }
+  #secondCard {
+    position: relative;
+    top: 70px;
+  }
+}
+/* Vision Section */
+#visionText {
+  background: url(../../assets/images/bgImg.png) no-repeat;
+  background-size: cover;
+}
+#visionText h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.note {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #0f1320;
+}
+.sizes {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+#cards {
+  margin: 100px 0px;
+}
+#NewsTitle {
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  margin-left: 20px;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+.link-dashed-underline {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+/* preSale Section */
+#presaleSection {
+  background: url(../../assets/images/presaleBg.png) no-repeat;
+  background-size: 100%;
+  /* position: absolute; */
+  /* bottom: 280px; */
+}
+.fontStyle {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+}
+/* buy section */
+.circle {
+  background-color: black;
+  padding: 30px;
+  border-radius: 50%;
+}
+/* responsive css */
+@media only screen and (min-width: 992px) {
+  #top-position {
+    position: relative;
+    top: 30px;
+  }
+  #bgRadius {
+    border-radius: 0px 250px 0px 0px;
+  }
+  #preSaleCard {
+    padding-top: 350px;
+    padding-bottom: 100px;
+  }
+
+  #position1 {
+    position: absolute;
+    left: calc(100% - 35px);
+    z-index: 2;
+  }
+  #position2 {
+    position: absolute;
+    top: 20%;
+    left: calc(100% - 35px);
+    z-index: 2;
+  }
+  #bgShadow {
+    background: url(../../assets//images/footer-bg.png) no-repeat;
+    background-size: 100%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  #preSaleCard {
+    padding-top: 250px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #preSaleCard {
+    padding-top: 220px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #visonSection img {
+    transform: scaleX(-1);
+  }
+  #position1,
+  #position2 {
+    position: absolute;
+    left: calc(50% - 35px);
+    top: calc(100% - 45px);
+    z-index: 2;
+    transform: rotate(90deg);
+  }
+  #visionText {
+    background: url(../../assets/images/bgImg-sm.png) no-repeat;
+    background-size: 100%;
+  }
+  #presaleSection {
+    background: url(../../assets/images/sm-presale-bg.png) no-repeat;
+    background-size: cover;
+  }
+  #preSaleCard {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+}
+/* card section */
+@media only screen and (max-width: 768px) {
+  #NewsTitle {
+    font-size: 1.6rem;
+  }
+}
