@@ -1,10 +1,16 @@
 #footerSection {
   text-align: center;
+  background: url(../../assets//images/footer-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-#footerSection a {
+#linkRightMargin a {
   color: white;
   margin-right: 20px;
 }
 #socialIcon img {
-  margin-right: 10px;
+  width: 40px;
+  margin-right: 8px;
 }
+
+

@@ -5,6 +5,7 @@ import Tokens from "../pages/tokens/Tokens";
 import ConnectWallet from "../pages/connect-wallet/ConnectWallet";
 import LightPaper from "../pages/light-paper/LightPaper";
 import Navbar from "../componenets/navbar/Navbar";
+import Footer from "../componenets/footer/Footer";
 
 export default function Routing() {
   return (
@@ -18,6 +19,7 @@ export default function Routing() {
           <Route path="connect-wallet" element={<ConnectWallet />} />
           <Route path="light-paper" element={<LightPaper />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

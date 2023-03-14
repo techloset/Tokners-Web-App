@@ -16,7 +16,7 @@ export default function Footer() {
       <div id="footerSection">
         <div className="container py-5">
           <div className="row">
-            <div className="col d-none my-5 d-lg-block">
+            <div className="col d-none my-5 d-lg-block" id="linkRightMargin">
               <Link to="#">OUR TEAM</Link>
               <Link to="#">TOKENS</Link>
               <Link to="#">CONNECT WALLET</Link>
@@ -29,12 +29,24 @@ export default function Footer() {
               <img className="mt-2" src={logo} alt="" />
             </div>
             <div className="col-12 my-4 col-lg-6" id="socialIcon">
-              <img src={twitter} alt="" />
-              <img src={fb} alt="" />
-              <img src={instagram} alt="" />
-              <img src={medium} alt="" />
-              <img src={github} alt="" />
-              <img src={reddit} alt="" />
+              <Link>
+                <img src={twitter} alt="" />
+              </Link>
+              <Link>
+                <img src={fb} alt="" />
+              </Link>
+              <Link>
+                <img src={instagram} alt="" />
+              </Link>
+              <Link>
+                <img src={medium} alt="" />
+              </Link>
+              <Link>
+                <img src={github} alt="" />
+              </Link>
+              <Link>
+                <img src={reddit} alt="" />
+              </Link>
             </div>
             <div className="col-12 my-4 col-lg-3 text-center text-lg-end">
               <span>© 2021 Tokners. All rights reserved.</span>

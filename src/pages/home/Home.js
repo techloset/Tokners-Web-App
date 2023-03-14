@@ -18,11 +18,10 @@ import mockupImage from "../../assets/images/mockupImage.png";
 import { Link } from "react-router-dom";
 import SaleCardSlider from "../../componenets/sale-card-slider/SaleCardSlider";
 import BuyProcedureCard from "../../componenets/buy-procedure-card/BuyProcedureCard";
-import Footer from "../../componenets/footer/Footer";
 export default function Home() {
   const [readMore, setReadMore] = useState(true);
   return (
-    <>
+    <div id="homePage">
       {/* TOP SECTION  */}
       <div className="container" id="topSection">
         <div className="row">
@@ -163,10 +162,16 @@ export default function Home() {
                   <img src={mockupImage} alt="mockup-Img" className="w-100" />
                 </div>
                 <div className="col-12 col-lg-6 text-light">
-                  <div className="d-flex align-items-center">
-                    <img src={favIcon} alt="Icon" />
-                    <p id="NewsTitle">Tokner is coming</p>
+
+                  <div className="row d-flex align-items-center">
+                    <div className="col-12 col-lg-2">
+                      <img src={favIcon} alt="Icon"style={{ width: "60px"}} />
+                    </div>
+                    <div className="col-12 col-lg-10">
+                      <p id="NewsTitle">Tokner is coming</p>
+                    </div>
                   </div>
+
                   <div style={{ fontSize: "12px", textAlign: "justify" }}>
                     <p>
                       Cryptocurrency adoption is at less than 1% of the global
@@ -185,7 +190,9 @@ export default function Home() {
                       social currency of their favourite person and watch their
                       investment as is with other crypto currency project.
                     </p>
-                    <span className={readMore ? "d-none d-xl-block" : "d-block"}>
+                    <span
+                      className={readMore ? "d-none d-xl-block" : "d-block"}
+                    >
                       <p className="opacity">
                         We are trying to do to this space what investment apps
                         did for the "nonexistent retail investors". We are
@@ -229,7 +236,9 @@ export default function Home() {
                   </div>
                   <div
                     className="d-block d-xl-none"
-                    onClick={() => setReadMore(readMore === false ? true : false)}
+                    onClick={() =>
+                      setReadMore(readMore === false ? true : false)
+                    }
                   >
                     <Link className="text-success link-dashed-underline">
                       {readMore ? "Read More" : "hide"}
@@ -252,45 +261,42 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="bgShadow">
-        {/* buy Procedur Section */}
-        <div id="buyProcedurSection">
-          <div className="container">
-            <h1 className="my-5 text-center">How to Buy</h1>
-            <div className="row text-center">
-              <div className="col-12 d-flex align-items-center col-lg-4 position-relative">
-                <BuyProcedureCard
-                  number="01"
-                  desc='First Connect your Metamask or TrustWallet to the "Connect Wallet" on the Homepage.'
-                />
-                <span id="position1" className="circle">
-                  <img src={yellowErrow} alt="" />
-                </span>
-              </div>
-              <div
-                className="col-12 d-flex align-items-center col-lg-4 position-relative"
-                id="top-position"
-              >
-                <BuyProcedureCard
-                  number="02"
-                  desc="Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet"
-                />
-                <span id="position2" className="circle">
-                  <img src={greenErrow} alt="" />
-                </span>
-              </div>
-              <div className="col-12 col-lg-4">
-                <BuyProcedureCard
-                  number="03"
-                  desc="Then after you will received your $WNTR to your address within 24hours. "
-                />
-              </div>
+
+      {/* buy Procedur Section */}
+      <div id="buyProcedurSection">
+        <div className="container">
+          <h1 className="my-5 text-center">How to Buy</h1>
+          <div className="row text-center">
+            <div className="col-12 d-flex align-items-center col-lg-4 position-relative">
+              <BuyProcedureCard
+                number="01"
+                desc='First Connect your Metamask or TrustWallet to the "Connect Wallet" on the Homepage.'
+              />
+              <span id="position1" className="circle">
+                <img src={yellowErrow} alt="" />
+              </span>
+            </div>
+            <div
+              className="col-12 d-flex align-items-center col-lg-4 position-relative"
+              id="top-position"
+            >
+              <BuyProcedureCard
+                number="02"
+                desc="Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet"
+              />
+              <span id="position2" className="circle">
+                <img src={greenErrow} alt="" />
+              </span>
+            </div>
+            <div className="col-12 col-lg-4">
+              <BuyProcedureCard
+                number="03"
+                desc="Then after you will received your $WNTR to your address within 24hours. "
+              />
             </div>
           </div>
         </div>
-        {/* footer Section */}
-        <Footer />
       </div>
-    </>
+    </div>
   );
 }
