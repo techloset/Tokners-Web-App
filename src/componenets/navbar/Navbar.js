@@ -26,7 +26,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse mt-3" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/out-team">
+                <Link className="nav-link" aria-current="page" to="/our-team">
                   Our Team
                 </Link>
               </li>

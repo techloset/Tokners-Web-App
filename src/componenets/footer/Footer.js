@@ -17,10 +17,13 @@ export default function Footer() {
         <div className="container py-5">
           <div className="row">
             <div className="col d-none my-5 d-lg-block" id="linkRightMargin">
-              <Link to="#">OUR TEAM</Link>
-              <Link to="#">TOKENS</Link>
-              <Link to="#">CONNECT WALLET</Link>
-              <Link to="#">LIGHT PAPER </Link>
+              <Link to="/our-team">OUR TEAM</Link>
+              <span className="mx-3"> / </span>
+              <Link to="/tokens">TOKENS</Link>
+              <span className="mx-3"> / </span>
+              <Link to="/connect-wallet">CONNECT WALLET</Link>
+              <span className="mx-3"> / </span>
+              <Link to="/light-paper">LIGHT PAPER </Link>
             </div>
           </div>
           {/* footer secton */}

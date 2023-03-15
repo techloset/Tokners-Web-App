@@ -12,7 +12,7 @@ export default function Card(props) {
             alt="..."
           />
           <h5 className="card-title">
-            For <stront style={{color: props.color}}>{props.title}</stront>
+            For <strong style={{color: props.color}}>{props.title}</strong>
           </h5>
           <p className={props.descHeight}>{props.desc}</p>
           <div>

@@ -4,7 +4,7 @@ import "./PreSaleCard.css";
 export default function PreSaleCard(props) {
   return (
     <>
-      <div className="col-12 bg-light text-dark rounded-4 p-5 text-center position-relative" id="phaseCards">
+      <div className="bg-light text-dark rounded-4 p-5 text-center position-relative" id="phaseCards">
         <span id="signNumber">{props.signNumber}</span>
         <img src={props.imgURL} alt="" />
         <div className="pb-4">

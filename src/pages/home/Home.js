@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Button, { FillButton } from "../../componenets/button/Button";
 import QestionCard from "../../componenets/qestionCard/QestionCard";
 import topImage from "../../assets/images/topImage.png";
@@ -16,10 +16,13 @@ import greenErrow from "../../assets/images/green-errow.png";
 import favIcon from "../../assets/images/favIcon.png";
 import mockupImage from "../../assets/images/mockupImage.png";
 import { Link } from "react-router-dom";
-import SaleCardSlider from "../../componenets/sale-card-slider/SaleCardSlider";
+import SwiperSlider from "../../componenets/swiper-slider/SwiperSlider";
 import BuyProcedureCard from "../../componenets/buy-procedure-card/BuyProcedureCard";
+import useHome from "./useHome";
+import saleCardData from "../../constant/saleCardData";
 export default function Home() {
-  const [readMore, setReadMore] = useState(true);
+  const { readMore, setReadMore } = useHome();
+
   return (
     <div id="homePage">
       {/* TOP SECTION  */}
@@ -162,10 +165,9 @@ export default function Home() {
                   <img src={mockupImage} alt="mockup-Img" className="w-100" />
                 </div>
                 <div className="col-12 col-lg-6 text-light">
-
                   <div className="row d-flex align-items-center">
                     <div className="col-12 col-lg-2">
-                      <img src={favIcon} alt="Icon"style={{ width: "60px"}} />
+                      <img src={favIcon} alt="Icon" style={{ width: "60px" }} />
                     </div>
                     <div className="col-12 col-lg-10">
                       <p id="NewsTitle">Tokner is coming</p>
@@ -256,12 +258,11 @@ export default function Home() {
           <div className="row">
             <div className="col-12">
               <h1 className="fontStyle mb-4">Presale Details</h1>
-              <SaleCardSlider />
+              <SwiperSlider cards={saleCardData} slidesPerViewLg={3} slidesPerViewXl={3} />
             </div>
           </div>
         </div>
       </div>
-
       {/* buy Procedur Section */}
       <div id="buyProcedurSection">
         <div className="container">

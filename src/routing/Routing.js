@@ -14,7 +14,7 @@ export default function Routing() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="out-team" element={<OurTeam />} />
+          <Route path="our-team" element={<OurTeam />} />
           <Route path="tokens" element={<Tokens />} />
           <Route path="connect-wallet" element={<ConnectWallet />} />
           <Route path="light-paper" element={<LightPaper />} />
