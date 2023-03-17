@@ -2,8 +2,8 @@ import React from "react";
 
 export default function ConnectWallet() {
   return (
-    <h1 className="text-danger text-center">
-      Required figma to design for this page "Connect Wallet"
+    <h1 className="text-warning d-flex mt-5 pt-5 px-4 vh-100 justify-content-center">
+      Figma is required to design for this page "Connect Wallet".
     </h1>
   );
 }
