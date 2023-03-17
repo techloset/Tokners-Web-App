@@ -1,0 +1,38 @@
+#toknDistributionSection h3 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+#responsiveSive {
+  color: #ffd100;
+  font-size: 4rem;
+}
+/* perposal Section */
+#perposalSection {
+  background: url(../../assets/images/presaleBg.png) no-repeat;
+  background-size: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  #perposalSection {
+    background: url(../../assets/images/sm-presale-bg.png) no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #responsiveSive {
+    font-size: 3rem;
+    color: #ffd100;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #responsiveSive {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #ffd100;
+  }
+}

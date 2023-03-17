@@ -1,0 +1,43 @@
+#perposalCard {
+  color: black;
+}
+#perposalCard h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  letter-spacing: -0.02em;
+}
+#perposalCard h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #0f1320;
+}
+#perposalCard span {
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+  color: #0f1320;
+
+}
+@media only screen and (max-width: 992px) {
+  #perposalCard h2 {
+    font-size: 1.5rem;
+  }
+  #perposalCard h1 {
+    font-size: 4rem;
+  }
+  #perposalCard span {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #perposalCard h1 {
+    font-size: 2.5rem;
+    
+  }
+  #perposalCard span {
+    font-size: 0.8rem;
+  }
+}

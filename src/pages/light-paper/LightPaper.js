@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 export default function LightPaper() {
   return (
-    <div>LightPaper</div>
-  )
+    <h1 className="text-danger text-center">Required figma to design for this page "Light Paper"</h1>
+  );
 }

@@ -10,6 +10,7 @@ export default function OurTeamCard(props) {
           backgroundImage: `url(${props.bgURL})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100%",
+          backgroundColor: "black",
           backgroundPosition: "bottom",
         }}
       >
